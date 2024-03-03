@@ -13,7 +13,7 @@ export async function contactsRoutes(fastify: FastifyInstance) {
 
     try {
       const data = await contactUseCase.create({
-        email: request.body.email,
+        email,
         name,
         phone,
         userEmail: emailUser,
